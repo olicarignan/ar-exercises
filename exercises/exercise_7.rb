@@ -11,4 +11,5 @@ puts "----------"
 
 # Your code goes here ...
 @user_input = gets.chomp
-Store.create(name: @user_input)
+@new_store = Store.create(name: @user_input)
+puts @new_store.errors.full_messages
